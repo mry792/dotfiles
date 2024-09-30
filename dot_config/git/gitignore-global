@@ -1,0 +1,11 @@
+
+# Common editor files.
+.vscode
+
+# Local build directories.
+build/
+build_*/
+
+# Toolchain files.
+*.toolchain.cmake
+toolchain.cmake
