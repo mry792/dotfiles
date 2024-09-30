@@ -1,0 +1,9 @@
+set bg=dark
+
+set scrolloff=3
+set expandtab
+set tabstop=4
+
+set showmatch
+set incsearch
+set wildmode=longest,list
