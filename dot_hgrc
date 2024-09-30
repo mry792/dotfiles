@@ -1,0 +1,57 @@
+# [ui]
+# username = Emery Goss ($USER@$HOSTNAME_LONG) <m.goss792@gmail.com>
+# merge = kdiff3
+
+# [diff]
+# git = True
+
+# [extensions]
+# color      =
+# convert    =
+# eol        =
+# # evolve     = ~/.vendor/hg-evolve/hgext3rd/evolve
+# graphlog   =
+# mq         =
+# purge      =
+# record     =
+# transplant =
+# rebase     =
+
+# #crecord  = $HOME/.hgext/crecord/crecord
+# #hgattic  = $HOME/.hgext/hgattic/attic.py
+# #hgshelve = $HOME/.hgext/hgshelve/hgshelve.py
+
+# [alias]
+# #attic  = shelve   --list
+# #shelf  = unshelve --inspect --name
+# status = status   --copies
+
+# annotate = annotate --color always
+# diff     = diff     --color always
+# glog     = glog     --color always
+# grep     = grep     --color always
+# heads    = heads    --color always
+# incoming = incoming --color always
+# log      = log      --color always --graph
+# outgoing = outgoing --color always
+# parents  = parents  --color always
+# #shelf    = unshelve --color always --inspect --name
+# status   = status   --color always
+# summary  = summary  --color always
+
+# [tortoisehg]
+# opentabsaftercurrent = False
+# tasktabs = west
+# vdiff = kdiff3
+# forcerepotab = True
+# defaultpush = revision
+
+# [eol]
+# native = LF
+# only-consistent = False
+
+# [attic]
+# trymerge = false
+
+# [mq]
+# secret = True
