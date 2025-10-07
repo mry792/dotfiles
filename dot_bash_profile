@@ -25,7 +25,7 @@ export HOSTNAME_LONG="${HOSTNAME}:${DISTRO_NAME}-${DISTRO_VERSION}"
 # WSL only
 if [[ $(uname --kernel-release) == *"microsoft"* ]]
 then
-    export DISPLAY=$(cat /etc/resolv.conf | grep nameserver | cut -d ' ' -f 2 2> /dev/null):0
+    export DISPLAY=:0
     export LIBGL_ALWAYS_INDIRECT=1
 fi
 
