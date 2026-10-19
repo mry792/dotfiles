@@ -16,3 +16,9 @@
     editor = vim
 
 [user]
+    name = Goss, Emery
+{{- if eq .profile "work" }}
+    email = {{ .emails.work }}
+{{- else }}
+    email = {{ .emails.personal }}
+{{- end }}

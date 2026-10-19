@@ -1,0 +1,11 @@
+{{- $profile := env "CHEZMOI_PROFILE" -}}
+{{- if not $profile -}}
+{{-   $profile = "personal" -}}
+{{- end -}}
+
+[data]
+    profile = {{ $profile | quote }}
+
+[data.emails]
+    personal = "m.goss792@gmail.com"
+    work = "emery.goss@gatik.ai"
