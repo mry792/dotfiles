@@ -16,7 +16,7 @@ EMERY_GNURC_BASH_LOGIN_LOADED=true
 # environment variables
 ###
 
-PATH="${HOME}/.local/bin:${PATH}"
+export PATH="${HOME}/.local/bin:${PATH}"
 export HOSTNAME
 export DISTRO_NAME="$(lsb_release --short --id)"
 export DISTRO_VERSION="$(lsb_release --short --release)"
