@@ -34,8 +34,10 @@ fi
 # ssh
 ###
 
-# Connect to ssh agent.
-eval $(ssh-agent -s) > /dev/null
+# Start and connect to ssh agent if one isn't running already.
+if [[ -z "${SSH_AUTH_SOCK}" || ! -e "${SSH_AUTH_SOCK}" ]]; then
+    eval $(ssh-agent -s) > /dev/null
+fi
 
 # Search for and add all identified keys.
 for pubfile in $(find ${HOME}/.ssh -type f -name "*.pub")
